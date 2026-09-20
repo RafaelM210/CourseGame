@@ -15,6 +15,10 @@ AAConfigurablePickup::AAConfigurablePickup()
 void AAConfigurablePickup::BeginPlay()
 {
 	Super::BeginPlay();
+	if (ScoreValue <= 0.0f)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Score Must be more than 0"));
+	}
 	
 }
 
