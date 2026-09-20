@@ -22,7 +22,7 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
-	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly,Category = "Pickup")
+	UPROPERTY(Editanywhere,Category = "Pickup")
 	float ScoreValue = 10.0f;
 
 };
