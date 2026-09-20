@@ -7,7 +7,7 @@
 AAConfigurablePickup::AAConfigurablePickup()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
 }
 
@@ -19,9 +19,9 @@ void AAConfigurablePickup::BeginPlay()
 }
 
 // Called every frame
-void AAConfigurablePickup::Tick(float DeltaTime)
+float AAConfigurablePickup::GetScoreValue() const
 {
-	Super::Tick(DeltaTime);
+	return ScoreValue;
 
 }
 

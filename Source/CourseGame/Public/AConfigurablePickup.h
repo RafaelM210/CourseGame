@@ -14,13 +14,15 @@ class COURSEGAME_API AAConfigurablePickup : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AAConfigurablePickup();
+	UFUNCTION(BlueprintCallable, Category = "Pickup")
+	float GetScoreValue() const;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+private:
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly,Category = "Pickup")
+	float ScoreValue = 10.0f;
 
 };
