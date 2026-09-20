@@ -15,7 +15,7 @@ public:
 	// Sets default values for this actor's properties
 	ACourseBeacon();
 
-	UFUNCTION(BlueprintPure, Category = "Beacon")
+	 UFUNCTION(BlueprintPure, Category = "Beacon")
 	float GetCharge() const { return Charge; }
 
 	UFUNCTION(BlueprintCallable, Category = "Beacon")
