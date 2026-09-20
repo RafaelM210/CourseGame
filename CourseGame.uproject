@@ -1,0 +1,49 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{E1E6B89F-4297-F122-8BC7-DC853CE8386E}",
+	"Category": "Education",
+	"Description": "Relay Runner Module 01 - Starter",
+	"Modules": [
+		{
+			"Name": "CourseGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		},
+		{
+			"Name": "CourseGameEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Enabled": true,
+			"Name": "Paper2D"
+		},
+		{
+			"Enabled": true,
+			"Name": "EnhancedInput"
+		},
+		{
+			"Enabled": true,
+			"Name": "PythonScriptPlugin",
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Enabled": true,
+			"Name": "EditorScriptingUtilities",
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "AndroidFileServer",
+			"Enabled": false
+		}
+	]
+}
